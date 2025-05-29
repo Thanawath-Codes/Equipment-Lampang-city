@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; /* Adjust the background color as needed */
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure the navbar appears above other elements */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: white; /* Adjust the text color as needed */
+  font-weight: bold;
+}
+
+nav input {
+  display: none;
+}
+
+.menu-btn {
+  display: none;
+}
+
+/* Add this media query to handle responsive behavior */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    padding: 10px 0;
+    display: block;
+  }
+
+  nav input:checked + ul {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .fas {
+    font-size: 1.5em;
+  }
+}
+
+.container {
+  margin-left: 70px; /* Adjust the value as needed */
+}
+
+.container{
+  max-width: 900px;
+  width: 95%;
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.container .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #9b59b6;
+}
+
+.state-agency {
+  margin-top: 20px;
+}
+
+.state-agency > div {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.state-agency .column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.state-agency .select-box {
+  flex: 1 1 calc(50% - 10px);
+  margin-bottom: 15px;
+}
+
+.state-agency select {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.state-agency select:focus {
+  border-color: #9b59b6;
+}
+.container .content p {
+  text-align: center;
+}
+ form .button{
+   height: 45px;
+   margin: 35px 0
+ }
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+ }
+ form .button input:hover{
+  /* transform: scale(0.99); */
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  }
+  @media (max-width: 768px) {
+    .images-register {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Align images at the top in a column */
+    }
+  
+    .images-register img {
+      margin-bottom: 20px; /* Add spacing between images */
+    }
+  
+    .container {
+      margin-left: 0; /* Reset margin */
+    }
+  }
+  
+  /* Add this media query to handle larger screens */
+  @media (min-width: 769px) {
+    .images-register {
+      display: flex;
+      flex-direction: row;
+      align-items: center; /* Align images horizontally */
+    }
+  
+    .images-register img {
+      margin-top: 20px; /* Add spacing between images */
+    }
+  
+    .container {
+      margin-left: 70px; /* Adjust the value as needed */
+    }
+  }
