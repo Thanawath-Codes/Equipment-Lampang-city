@@ -683,8 +683,7 @@ if (!$_SESSION['userid']) {
         <!-- END OF MONTLY REPORT -->
 
         <div class="fast-payment">
-          <h2>
-            หน่วยงานภายใน</h2>
+          <h2>หน่วยงานภายใน</h2>
           <div class="badges">
             <div class="badge">
               <span class="material-icons-sharp">
@@ -1027,17 +1026,51 @@ if (!$_SESSION['userid']) {
         </div>
         <!-- END OF FAST PAYMENT -->
 
-        <canvas id="chart"></canvas>
+        <!-- CANVAS -->  
 
-      <div class="container">
-        <div class="chart">
-            <canvas id="barchart"></canvas>
-        </div>
-        <div class="chart">
-            <canvas id="doughnut"></canvas>
-        </div>
-    </div>
+          <h2>Ms-Office</h2>
+          <div class="badges">
+            <div class="badge">
+              <span class="material-icons-sharp">
+                add
+              </span>
+              <div class="select-box">
+    <select class="form-select" id="year-selector" name="year_equipment">
+      <option selected disabled>ปีงบประมาณ</option>
+      <?php
+      $currentYear = date("Y"); // ปี ค.ศ.
+      $earliestYear = 1970;
+      while ($currentYear >= $earliestYear) {
+          $buddhistYear = $currentYear + 543; // แสดงเป็น พ.ศ.
+          echo "<option value=\"$currentYear\">$buddhistYear</option>"; // value = ค.ศ.
+          $currentYear--;
+      }
+      ?>
+    </select>
+  </div>
+            </div>
+            <br>
+
+
+  <canvas id="barchart"></canvas>
+
+
+  <div class="fast-payment">
+          <h4>Windows</h4>
+          <div class="badges">
+            <div class="badge">
+              <span class="material-icons-sharp">
+                add
+              </span>
+            </div>
+
+
+        <canvas id="doughnut"></canvas>
+        
+        <!-- END CANVAS -->
+
         </section>
+
       <!-- END OF MIDDLE -->
 
 
@@ -3633,9 +3666,9 @@ if (!$_SESSION['userid']) {
 
     
 
-    <script src="../../../assets/js/graph.js"></script>
+
+
     <script src="../../../assets/js/chart1.js"></script>
-    <script src="../../../assets/js/chart2.js"></script>
 
 
 

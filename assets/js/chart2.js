@@ -1,9 +1,10 @@
+ 
  const ctx2 = document.getElementById('doughnut').getContext('2d');
 
   const doughnut = new Chart(ctx2, {
     type: 'doughnut',
     data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange', 'White'],
+      labels: ['Ms-Office 2010', 'Ms-Office 2013', 'Ms-Office 2016', 'Ms-Office 2019', 'Ms-Office 2021', 'Ms-Office 365'],
       datasets: [{
         label: '# of Votes',
          data: [2, 19, 13, 25, 2, 13, 30],
