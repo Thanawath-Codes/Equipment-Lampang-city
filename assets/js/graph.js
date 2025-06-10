@@ -11,7 +11,7 @@ fetch('../../../application/config/graph/Graph_microsoft.php')
         // 🔹 แปลงปีเป็นตัวเลขทั้งหมด แล้วหา 5 ปีล่าสุด
         const allYears = [...new Set(data.map(item => parseInt(item.year_equipment)))];
         const latestYears = allYears.sort((a, b) => b - a).slice(0, 5).sort((a, b) => a - b);
-        console.log("📆 5 ปีล่าสุด:", latestYears);
+        console.log(":", latestYears);
 
         // 🔹 กรองข้อมูลเฉพาะ 5 ปีล่าสุด
         const filteredData = data.filter(item => latestYears.includes(parseInt(item.year_equipment)));
@@ -61,7 +61,7 @@ fetch('../../../application/config/graph/Graph_microsoft.php')
                 responsive: true,
                 plugins: {
                     legend: { position: 'top' },
-                    title: { display: true, text: 'การใช้งาน Microsoft Office (5 ปีล่าสุด)' }
+                    title: { display: true, text: 'การใช้งาน Microsoft Office' }
                 },
                 scales: {
                     x: { title: { display: true, text: 'ปี (พ.ศ.)' } },

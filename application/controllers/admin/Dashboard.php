@@ -117,10 +117,6 @@ if (!$_SESSION['userid']) {
             <span class="material-icons-sharp">payment</span>
             <h4>เพิ่มครุภัณฑ์</h4>
           </a>
-          <a href="Analysis.php">
-            <span class="material-icons-sharp">pie_chart</span>
-            <h4>การวิเคราะห์</h4>
-          </a>
           <a href="User_account.php">
             <span class="material-icons-sharp">message</span>
             <h4>บัญชีผู้ใช้</h4>
@@ -1027,8 +1023,83 @@ if (!$_SESSION['userid']) {
         </div>
         <!-- END OF FAST PAYMENT -->
 
+        <!-- CANVAS -->  
+
         <canvas id="chart"></canvas>
-      
+
+        
+          <div class="canvas-microsoft">
+            <h2>Micosoft</h2>
+            <div class="graphs">
+              <div class="graph">
+                <span class="material-icons-sharp">
+                  add
+                </span>
+              </div>
+              <div class="graph">
+                <span class="bg-primary"></span>
+                <div>
+                  <h5>ปีงบประมาณ</h5>
+                  <div class="select-box">
+                      <select class="form-select" id="year-selector" name="year_equipment">
+                        <option selected disabled>ปีงบประมาณ</option>
+                          <?php
+                              $currentYear = date("Y"); // ปี ค.ศ.
+                              $earliestYear = 1970;
+                              while ($currentYear >= $earliestYear) {
+                                  $buddhistYear = $currentYear + 543; // แสดงเป็น พ.ศ.
+                                  echo "<option value=\"$currentYear\">$buddhistYear</option>"; // value = ค.ศ.
+                                  $currentYear--;
+                              }
+                          ?>
+                      </select>
+                  </div>
+              </div>
+            </div>
+
+            <canvas id="barchart"></canvas>
+
+          </div>
+
+          
+          
+
+          </div>
+ 
+        <!-- END CANVAS -->
+      <div class="canvas-windows">
+            <h2>Windows</h2>
+            <div class="graphs">
+              <div class="graph">
+                <span class="material-icons-sharp">
+                  add
+                </span>
+              </div>
+              <div class="graph">
+                <span class="bg-danger"></span>
+                <div>
+                  <h5>ปีงบประมาณ</h5>
+                  <div class="select-box">
+                      <select class="form-select" id="select_year" name="year_equipment">
+                      <option selected disabled>ปีงบประมาณ</option>
+                        <?php
+                          $currentYear = date("Y");
+                          while ($currentYear >= 1970) {
+                              $buddhistYear = $currentYear + 543;
+                              echo "<option value=\"$buddhistYear\">$buddhistYear</option>";
+                              $currentYear--;
+                          }
+                          ?>
+
+                        ?>
+                      </select>
+                  </div>
+              </div>
+            </div>
+
+            <canvas id="doughnut"></canvas>
+
+          </div>
         </section>
       <!-- END OF MIDDLE -->
       <section class="right">
@@ -3624,7 +3695,8 @@ if (!$_SESSION['userid']) {
     
 
     <script src="../../../assets/js/graph.js"></script>
-
+    <script src="../../../assets/js/chart_microsoft.js"></script>
+    <script src="../../../assets/js/chart_windows.js"></script>
 
 
 

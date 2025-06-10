@@ -513,12 +513,120 @@ main .fast-payment .badge div {
 
 /*==================== CANVAS =====================*/
 
-canvas#chart {
+
+
+canvas#chart,
+canvas#barchart,
+canvas#doughnut {
     background: var(--color-white);
     max-width: 100%;
     margin-top: 2rem;
     border-radius: var(--card-border-radius);
     padding: var(--card-padding);
+}
+
+main .canvas-microsoft {
+    margin-top: 2rem;
+    display: flex;
+    align-self: center;
+    gap: 2rem;
+}
+
+main .canvas-microsoft .graphs {
+    display: flex;
+    gap: 1rem;
+    align-self: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+main .canvas-microsoft .graph span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+main .canvas-microsoft .graph {
+    padding: 0.6rem var(--card-padding);
+    background: var(--color-white);
+    border-radius: var(--border-radius-3);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 300ms ease;
+}
+
+main .canvas-microsoft .graph:hover{
+    box-shadow: 0 0 1.5rem var(--color-primary-light);
+    cursor: pointer;
+}
+
+main .canvas-microsoft .graph:first-child span {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    height: fit-content;
+    font-size: 1.5rem;
+}
+
+main .canvas-microsoft .graph div {
+    display: flex;
+    gap: 2rem;
+    align-self: center;
+}
+
+
+
+
+
+main .canvas-windows {
+    margin-top: 2rem;
+    display: flex;
+    align-self: center;
+    gap: 2rem;
+}
+
+main .canvas-windows .graphs {
+    display: flex;
+    gap: 1rem;
+    align-self: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+main .canvas-windows .graph span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+main .canvas-windows .graph {
+    padding: 0.6rem var(--card-padding);
+    background: var(--color-white);
+    border-radius: var(--border-radius-3);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 300ms ease;
+}
+
+main .canvas-windows .graph:hover{
+    box-shadow: 0 0 1.5rem var(--color-primary-light);
+    cursor: pointer;
+}
+
+main .canvas-windows .graph:first-child span {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    height: fit-content;
+    font-size: 1.5rem;
+}
+
+main .canvas-windows .graph div {
+    display: flex;
+    gap: 2rem;
+    align-self: center;
 }
 
 
