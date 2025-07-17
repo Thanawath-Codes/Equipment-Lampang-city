@@ -104,7 +104,11 @@ if (isset($_SESSION['success']) || isset($_SESSION['error'])) {
         <p><span class="material-icons-sharp">
             error
           </span>
+<<<<<<< HEAD
           อนุญาติให้ใช้เฉพาะตัวอักษร (a-z), ตัวเลข(0-9) เท่านั้น
+=======
+          อนุญาติให้ใช้เฉพาะตัวอักษร (a-z), ตัวเลข(0-9) และเครื่องหมาจุลภาค (.) เท่านั้น
+>>>>>>> b87ac7f95962d8df07a4fd0850e638c04693ed8f
         </p>
         
         <div class="button">

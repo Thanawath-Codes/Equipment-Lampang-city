@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
 include $_SERVER['DOCUMENT_ROOT'] . '/Equipment-Lampang-city/system/database/DB_account.php';
+=======
+include '../../../system/database/DB_account.php';
+>>>>>>> b87ac7f95962d8df07a4fd0850e638c04693ed8f
 
 $department_id =   $_POST['department_data'];
 

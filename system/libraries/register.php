@@ -27,13 +27,21 @@ if (isset($_POST['submit'])) {
     }
 
     // ตรวจสอบว่า username มีอักขระที่ไม่อนุญาตหรือไม่
+<<<<<<< HEAD
     if (preg_match('/[\/\*\-\๑\+\!\$\#\|\&\^]/', $username)) {
+=======
+    if (preg_match('/[\/\*\-\๑\+\!\$\#\|\.\&\^]/', $username)) {
+>>>>>>> b87ac7f95962d8df07a4fd0850e638c04693ed8f
         header("Location: ../messages/account/Username_invalid.php");
         exit();
     }
 
     // ตรวจสอบว่า password มีอักขระที่ไม่อนุญาตหรือไม่
+<<<<<<< HEAD
     if (preg_match('/[\/\*\_\-\๑\+\!\$\#\|\&\^]/', $password_hash)) {
+=======
+    if (preg_match('/[\/\*\_\-\๑\+\!\$\#\|\.\&\^]/', $password_hash)) {
+>>>>>>> b87ac7f95962d8df07a4fd0850e638c04693ed8f
         header("Location: ../messages/account/Password_invalid.php");
         exit();
     }
