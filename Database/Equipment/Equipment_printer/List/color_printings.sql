@@ -1,0 +1,146 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Mar 12, 2025 at 04:54 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.0.30
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `equipment_printer`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `color_printings`
+--
+
+CREATE TABLE `color_printings` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `connecting_printer_id` int(11) NOT NULL DEFAULT 1
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `color_printings`
+--
+
+INSERT INTO `color_printings` (`id`, `name`, `connecting_printer_id`) VALUES
+(1, 'WHITE/BLACK, COLOR', 1),
+(2, 'WHITE/BLACK', 2),
+(3, 'WHITE/BLACK', 3),
+(4, 'WHITE/BLACK', 4),
+(5, 'WHITE/BLACK', 5),
+(6, 'WHITE/BLACK', 6),
+(7, 'WHITE/BLACK', 7),
+(8, 'WHITE/BLACK', 8),
+(9, 'WHITE/BLACK, COLOR', 9),
+(10, 'WHITE/BLACK', 10),
+(11, 'WHITE/BLACK, COLOR', 11),
+(12, 'WHITE/BLACK, COLOR', 12),
+(13, 'WHITE/BLACK, COLOR', 13),
+(14, 'WHITE/BLACK, COLOR', 14),
+(15, 'WHITE/BLACK, COLOR', 15),
+(16, 'WHITE/BLACK', 16),
+(17, 'WHITE/BLACK', 17),
+(18, 'WHITE/BLACK', 18),
+(19, 'WHITE/BLACK', 19),
+(20, 'WHITE/BLACK, COLOR', 20),
+(21, 'WHITE/BLACK, COLOR', 21),
+(22, 'WHITE/BLACK, COLOR', 22),
+(23, 'WHITE/BLACK, COLOR', 23),
+(24, 'WHITE/BLACK', 24),
+(25, 'WHITE/BLACK', 25),
+(26, 'WHITE/BLACK, COLOR', 26),
+(27, 'WHITE/BLACK, COLOR', 27),
+(28, 'WHITE/BLACK, COLOR', 28),
+(29, 'WHITE/BLACK, COLOR', 29),
+(30, 'WHITE/BLACK, COLOR', 30),
+(31, 'WHITE/BLACK, COLOR', 31),
+(32, 'WHITE/BLACK, COLOR', 32),
+(33, 'WHITE/BLACK, COLOR', 33),
+(34, 'WHITE/BLACK, COLOR', 34),
+(35, 'WHITE/BLACK, COLOR', 35),
+(36, 'WHITE/BLACK, COLOR', 36),
+(37, 'WHITE/BLACK, COLOR', 37),
+(38, 'WHITE/BLACK, COLOR', 38),
+(39, 'WHITE/BLACK, COLOR', 39),
+(40, 'WHITE/BLACK, COLOR', 40),
+(41, 'WHITE/BLACK, COLOR', 41),
+(42, 'WHITE/BLACK, COLOR', 42),
+(43, 'WHITE/BLACK, COLOR', 43),
+(44, 'WHITE/BLACK, COLOR', 44),
+(45, 'WHITE/BLACK, COLOR', 45),
+(46, 'WHITE/BLACK, COLOR', 46),
+(47, 'WHITE/BLACK, COLOR', 47),
+(48, 'WHITE/BLACK, COLOR', 48),
+(49, 'WHITE/BLACK', 49),
+(50, 'WHITE/BLACK, COLOR', 50),
+(51, 'WHITE/BLACK, COLOR', 52),
+(52, 'WHITE/BLACK, COLOR', 51),
+(53, 'WHITE/BLACK, COLOR', 53),
+(54, 'WHITE/BLACK, COLOR', 54),
+(55, 'WHITE/BLACK, COLOR', 55),
+(56, 'WHITE/BLACK', 56),
+(57, 'WHITE/BLACK, COLOR', 57),
+(58, 'WHITE/BLACK, COLOR', 58),
+(59, 'WHITE/BLACK', 59),
+(60, 'WHITE/BLACK', 60),
+(61, 'WHITE/BLACK', 61),
+(62, 'WHITE/BLACK', 62),
+(63, 'WHITE/BLACK', 63),
+(64, 'WHITE/BLACK, COLOR', 64),
+(65, 'WHITE/BLACK, COLOR', 65),
+(66, 'WHITE/BLACK', 66),
+(67, 'WHITE/BLACK', 67),
+(68, 'WHITE/BLACK', 68),
+(69, 'WHITE/BLACK', 69),
+(70, 'WHITE/BLACK', 70),
+(71, 'WHITE/BLACK, COLOR', 71),
+(72, 'WHITE/BLACK, COLOR', 72),
+(73, 'WHITE/BLACK, COLOR', 73),
+(74, 'WHITE/BLACK, COLOR', 74),
+(75, 'WHITE/BLACK', 75),
+(76, 'WHITE/BLACK', 76),
+(77, 'WHITE/BLACK', 77),
+(78, 'WHITE/BLACK, COLOR', 78),
+(79, 'WHITE/BLACK', 79),
+(80, 'WHITE/BLACK, COLOR', 80),
+(81, 'WHITE/BLACK, COLOR', 81);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `color_printings`
+--
+ALTER TABLE `color_printings`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `color_printings`
+--
+ALTER TABLE `color_printings`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=82;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
