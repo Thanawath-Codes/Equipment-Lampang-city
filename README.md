@@ -11,7 +11,7 @@
 ## ✅ Displays data counts by type and category
 ## ✅ User data management
 ## ✅ Displays data in various chart formats
-## ✅
+## ✅ system to speed up data retrieval from the database
 
 ## Install the project database before running it on the website. 🎨💡
 
