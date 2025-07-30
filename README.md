@@ -4,7 +4,7 @@
 
 
 ## Description:
-## Create a modern web application for storing equipment data on the Lampang Municipality website using PHP, HTML, CSS, and JavaScript. It stores data from computers, scanners, printers, monitors, tablets, and UPSs. 🌐✨
+## Create a modern web application for storing equipment data on the Lampang Municipality website using PHP, HTML, CSS, and JavaScript. It stores data from computers, scanners, printers, monitors, tablets, and UPS. 🌐✨
 
 ## 🔥 System Features:
 ## ✅ Data management in databases or storage systems
